@@ -1,0 +1,16 @@
+# Inicializa e faz o primeiro commit
+git init
+git add .
+git commit -m "projeto inicial"
+
+# Configura a branch e o remoto (ajuste com seu usuário do GitHub)
+git branch -M main
+git remote add origin git@github.com:SEU_USUARIO/meu-projeto-git.git
+
+# O "pulo do gato": faça uma pequena alteração e faça o segundo commit
+echo "/* Comentário extra */" >> style.css
+git add .
+git commit -m "atividade final"
+
+# Envia para o GitHub
+git push -u origin main
